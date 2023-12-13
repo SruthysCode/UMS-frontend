@@ -1,0 +1,37 @@
+
+<mat-card>
+    <mat-card-header>
+      <h1>User Details</h1>
+    </mat-card-header>
+    <mat-card-content>      
+
+      <div *ngIf="userData">
+        <h4>Welcome, {{ userData[0].name }}!</h4>
+        <h4 class="" style="color: blue;">Details  </h4>
+        <div style="color:blueviolet">
+          <h4>Name : {{userData[0].name}}</h4>
+          <h4>Email : {{userData[0].email}}</h4>
+          <h4>Phone : {{userData[0].mobile}}</h4>
+          <h4>User Name : {{ userData[0].username }}</h4>
+          <h4>
+            File Name : {{ userData[0].image}}
+          </h4>
+          <div>
+            <app-upload-file></app-upload-file>
+          </div>
+          <div>
+            <!-- <img  src="src\assets\images\done.jpeg" alt="user image"> -->
+            <img [src]= "img"  style="height: auto; width:auto">
+           <img src="src/assets/images/done.jpeg" alt="jhgyujh"> 
+           <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Shiba Inu"> -->
+  
+          </div>
+        </div>
+ 
+             
+      </div>
+    </mat-card-content>
+</mat-card>
+
+
+  

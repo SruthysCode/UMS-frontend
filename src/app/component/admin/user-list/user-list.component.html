@@ -1,0 +1,47 @@
+
+<p [(ngModel)]= "userlist[0].name" >LLLLL</p> {{ this.userlist }}
+
+<div>
+    <p [(ngModel)]=" this.display "></p>
+    <p>*&&&&&</p>
+    <p>{{ this.display[2] }}</p>
+    <p>{{ this.display }}</p>
+    <!-- {{temp[0]}} -->
+</div>
+<div *ngFor="let user of userlist">
+  {{ user.name }}
+</div>
+
+<div>
+    <button mat-raised-button  color="accent"> List All Users</button> 
+     <!-- (click)="getusers()" -->
+</div>
+
+{{ userlist[0].name }} {{ this.userlist }}
+<div>
+    <div>
+        <!-- <h2>User List</h2> -->
+        <ul>
+          <li *ngFor="let user of display">
+            <strong>Username:</strong> {{ user.username }}<br>
+            <strong>Name:</strong> {{ user.name }}<br>
+            <strong>Email:</strong> {{ user.email }}<br>
+            <strong>Mobile:</strong> {{ user.mobile }}<br>
+            <strong>Gender:</strong> {{ user.gender }}<br>
+            <hr>
+          </li>
+        </ul>
+      </div>
+      
+</div>
+<div>
+    <p>{{ userlist }}</p>
+    <p>{{ userlist[0].email }}</p>
+    <p>fyguhjbvg</p>
+    <p>{{ userlist[0].mobile[0]  }}</p>
+
+    <p>{{ userlist}}</p>
+
+</div>
+
+
